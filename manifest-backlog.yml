@@ -6,7 +6,12 @@ applications:
   routes:
   - route: backlog-pal-prashank-guru.cfapps.io
   path: Applications/BacklogServer/bin/Release/netcoreapp2.1/publish
+  env:
+    GRANT_TYPE: client_credentials
   services:
   - tracker-backlog-database
-  - tracker-service-registry  
+  - tracker-service-registry
+  - tracker-amqp
+  - tracker-sso
+  - tracker-config-server
 
