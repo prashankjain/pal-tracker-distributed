@@ -8,4 +8,6 @@ applications:
   path: Applications/BacklogServer/bin/Release/netcoreapp2.1/publish
   services:
   - tracker-backlog-database
-  - tracker-service-registry
+  - tracker-service-registry  
+  - tracker-circuit-breaker-dashboard
+  - tracker-amqp
